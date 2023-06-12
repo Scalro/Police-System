@@ -1,0 +1,54 @@
+.login_container {
+    -fx-background-color: #eee;
+}
+
+/* Logo Container*/
+
+.login_logo_container {
+    -fx-background-color: linear-gradient(to right,#0000c4,blue);
+    -fx-alignment: center;
+}
+.login_logo_container Text {
+    -fx-font-size: 1.5em;
+    -fx-fill: #ffffff;
+    -fx-font-weight: BOLD;
+}
+
+/*Login Container*/
+
+.account_choice {
+    -fx-background-color: #8c8c91;
+}
+.account_choice .label {
+    -fx-text-fill: #0000ff ;
+    -fx-font-size: 1.1em;
+}
+.account_choice .arrow {
+    -fx-background-color: #ffffff;
+}
+
+/* login form*/
+.login_form_container {
+    -fx-spacing: 15;
+    -fx-alignment: top-left;
+}
+
+.input_field {
+    -fx-background-color: #ffffff;
+    -fx-pre-height: 35;
+    -fx-font-size: 1.2em;
+}
+
+.login_form_container Button {
+    -fx-background-color: #0000c4;
+    -fx-text-fill: #ffffff;
+    -fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+    -fx-alignment: center;
+}
+
+.login_form_container Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #42669e;
+}

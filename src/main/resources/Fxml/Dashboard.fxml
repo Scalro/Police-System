@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Fxml.Dashboard"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" styleClass="dashboard" stylesheets="@../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.DashboardController">
+   <Text layoutX="37.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="username" text="Hi, User" wrappingWidth="110.84099578857422" AnchorPane.leftAnchor="37.0" />
+   <Label layoutX="761.0" layoutY="46.0" prefHeight="18.0" styleClass="date_lbl" text="08, June 2023" AnchorPane.rightAnchor="14.0" />
+   <HBox layoutX="56.0" layoutY="144.0" prefHeight="142.0" prefWidth="760.0" styleClass="cases_view" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
+      <AnchorPane prefHeight="122.0" prefWidth="240.0">
+         <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL OPEN CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+         <Label layoutX="35.0" layoutY="62.0" styleClass="cases" text="15" />
+         <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="127.0" layoutY="85.0" size="40" />
+         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="6 Closed" />
+         <styleClass>
+            <String fx:value="cases_card" />
+            <String fx:value="cases_gradient" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="122.0" prefWidth="240.0">
+         <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL OTHER CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+         <Label layoutX="35.0" layoutY="62.0" styleClass="cases" text="7" />
+         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="3 Closed" />
+         <FontAwesomeIconView fill="WHITE" glyphName="ADDRESS_BOOK" layoutX="127.0" layoutY="85.0" size="40" />
+         <styleClass>
+            <String fx:value="cases_card" />
+            <String fx:value="cases_gradient" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="200.0" layoutY="10.0" prefHeight="122.0" prefWidth="240.0">
+         <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL ACCIDENT CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+         <Label layoutX="35.0" layoutY="62.0" prefHeight="28.0" prefWidth="15.0" styleClass="cases" text="3" />
+         <FontAwesomeIconView fill="WHITE" glyphName="EXCLAMATION_TRIANGLE" layoutX="127.0" layoutY="85.0" size="40" />
+         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="2 Closed" />
+         <styleClass>
+            <String fx:value="cases_card" />
+            <String fx:value="cases_gradient" />
+         </styleClass>
+      </AnchorPane>
+      <AnchorPane layoutX="390.0" layoutY="10.0" prefHeight="122.0" prefWidth="240.0">
+         <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL P3 CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
+         <Label layoutX="35.0" layoutY="62.0" prefHeight="28.0" prefWidth="34.0" styleClass="cases" text="5" />
+         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="1 Closed" />
+         <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="127.0" layoutY="85.0" size="40" />
+         <styleClass>
+            <String fx:value="cases_card" />
+            <String fx:value="cases_gradient" />
+         </styleClass>
+      </AnchorPane>
+   </HBox>
+   <Text layoutX="37.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="Dashboard" AnchorPane.leftAnchor="37.0" />
+   <Text layoutX="620.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="Police Management System" AnchorPane.rightAnchor="14.0" />
+   <Text layoutX="29.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="Recently Reported Cases" AnchorPane.leftAnchor="29.0" />
+   <ListView layoutX="14.0" layoutY="329.0" prefHeight="377.0" prefWidth="520.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="568.0" />
+   <Text layoutX="365.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="KENYA NATIONAL POLICE SERVICE" wrappingWidth="421.8409957885742" />
+   <Text layoutX="486.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="motto" text="Utumishi Kwa Wote">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Text>
+   <Text layoutX="883.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="Recently Closed Cases" AnchorPane.rightAnchor="14.0" />
+   <ListView layoutX="567.0" layoutY="329.0" prefHeight="377.0" prefWidth="520.0" AnchorPane.rightAnchor="14.0" />
 </AnchorPane>

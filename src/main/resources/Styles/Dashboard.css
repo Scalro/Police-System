@@ -1,0 +1,66 @@
+
+.dashboard {
+    -fx-background-color: linear-gradient(to right,#c9a906,#e0c704,#a61d02);
+}
+
+.username {
+    -fx-font-size: 2em;
+    -fx-fill: #08002e;
+}
+
+.title {
+    -fx-fill: linear-gradient(to right,#0000ff,#990209,#213b63,#0c114d,#990209,#0000ff,#0000ff);
+    -fx-font-size: 2em;
+}
+
+.texts {
+    -fx-font-size: 1.5em;
+    -fx-fill: #08002e;
+}
+
+.motto {
+    -fx-fill: linear-gradient(to right,#0000ff,#990209,#213b63,#0c114d,#990209,#0000ff,#0000ff);
+    -fx-font-size: 1.5em;
+}
+
+.cases_view {
+    -fx-background-color: linear-gradient(to right,#c9a906,#e0c704,#a61d02);
+    -fx-background-radius: 10 0 0 10;
+    -fx-padding: 10 0 10 0;
+    -fx-alignment: center;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: ddd;
+    -fx-spacing: 10;
+}
+
+.cases_card {
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box,#aaaaaa,10, 0, 0, 10);
+}
+
+.cases_gradient {
+    -fx-background-color: linear-gradient(to right,#04126b,blue);
+}
+
+.cases FontAwesomeIconView {
+    -fx-fill: ffffff;
+}
+
+.cases_title {
+    -fx-fill: fff;
+    -fx-font-family: "Calbri Light";
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+}
+.cases {
+    -fx-text-fill: red;
+    -fx-font-size: 1.5em;
+}
+
+.cases_closed {
+    -fx-text-fill: #b3afaf;
+}
+
+.date_lbl {
+    -fx-text-fill: #0e1030;
+}

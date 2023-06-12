@@ -9,4 +9,5 @@ module com.police.policesystem {
             
     opens com.police.policesystem to javafx.fxml;
     exports com.police.policesystem;
+    exports com.police.policesystem.Controllers;
 }
