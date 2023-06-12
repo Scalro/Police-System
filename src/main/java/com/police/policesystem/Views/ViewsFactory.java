@@ -38,7 +38,7 @@ public class ViewsFactory {
     public AnchorPane getCaseReportAView(){
         if (caseReportAView == null) {
             try {
-                caseReportAView = new FXMLLoader(getClass().getResource("/Fxml/Cases.fxml")).load();
+                caseReportAView = new FXMLLoader(getClass().getResource("/Fxml/CaseReportA.fxml")).load();
             }catch (Exception e){
                 e.printStackTrace();
             }
@@ -49,7 +49,7 @@ public class ViewsFactory {
     public AnchorPane getCaseReportBView(){
         if (caseReportBView == null) {
             try {
-                caseReportBView = new FXMLLoader(getClass().getResource("/Fxml/Users/AddStudent.fxml")).load();
+                caseReportBView = new FXMLLoader(getClass().getResource("/Fxml/CaseReportB.fxml")).load();
             }catch (Exception e){
                 e.printStackTrace();
             }
@@ -60,7 +60,7 @@ public class ViewsFactory {
     public AnchorPane getAccidentReportView() {
         if (accidentReportView == null) {
             try {
-                accidentReportView = new FXMLLoader(getClass().getResource("/Fxml/ScanFingers.fxml")).load();
+                accidentReportView = new FXMLLoader(getClass().getResource("/Fxml/AccidentReport.fxml")).load();
             }catch (Exception e){
                 e.printStackTrace();
             }

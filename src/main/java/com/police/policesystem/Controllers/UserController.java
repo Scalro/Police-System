@@ -13,9 +13,9 @@ public class UserController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Model.getInstance().getViewsFactory().getUserSelectedMenuItem().addListener((observableValue, oldVal, newVal) -> {
             switch (newVal){
-                case "Attendance" -> user_parent.setCenter(Model.getInstance().getViewsFactory().getCaseReportAView());
-                case "AddStudent" -> user_parent.setCenter(Model.getInstance().getViewsFactory().getCaseReportBView());
-                case "ScanFingers" -> user_parent.setCenter(Model.getInstance().getViewsFactory().getAccidentReportView());
+                case "CaseReportA" -> user_parent.setCenter(Model.getInstance().getViewsFactory().getCaseReportAView());
+                case "CaseReportB" -> user_parent.setCenter(Model.getInstance().getViewsFactory().getCaseReportBView());
+                case "AccidentReport" -> user_parent.setCenter(Model.getInstance().getViewsFactory().getAccidentReportView());
                 default -> user_parent.setCenter(Model.getInstance().getViewsFactory().getDashboardView());
             }
         } );

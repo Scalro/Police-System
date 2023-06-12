@@ -34,21 +34,21 @@ public class UserMenuController implements Initializable {
 
     public void addListeners(){
         dashboard_btn.setOnAction(event -> onDashboard());
-        casesreport_btn.setOnAction(event -> onAttendance());
-        casesreport_btn1.setOnAction(event -> onAddSttudent());
-        accidentreport_btn.setOnAction(event ->  onScanFingers());
+        casesreport_btn.setOnAction(event -> onCaseReportA());
+        casesreport_btn1.setOnAction(event -> onCaseReportB());
+        accidentreport_btn.setOnAction(event ->  onAccidentReport());
     }
     public void onDashboard(){
         Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("Dashboard");
     }
-    public void onAttendance(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("Attendance");
+    public void onCaseReportA(){
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("CaseReportA");
     }
 
-    public void onAddSttudent(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("AddStudent");
+    public void onCaseReportB(){
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("CaseReportB");
     }
-    public void onScanFingers(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("ScanFingers");
+    public void onAccidentReport(){
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("AccidentReport");
     }
 }

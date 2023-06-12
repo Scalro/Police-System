@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.AccidentReportController">
+   <children>
+      <Text layoutX="474.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accident Report Form" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Lato Black Italic" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="477.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPUBLIC OF KENYA">
+         <font>
+            <Font name="FreeSans Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="482.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE KENYA POLICE">
+         <font>
+            <Font name="FreeSans Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="412.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABSTRACT FROM POLICE ON A ROAD ACCIDENT" underline="true">
+         <font>
+            <Font name="FreeSans Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To:" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="176.0" layoutY="150.0" prefHeight="26.0" prefWidth="328.0" />
+      <Text layoutX="85.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The officer i/c" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="510.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Division.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="595.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="635.0" layoutY="149.0" prefHeight="26.0" prefWidth="328.0" />
+      <Text layoutX="85.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Po. Box ">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="133.0" layoutY="184.0" prefHeight="26.0" prefWidth="328.0" />
+      <Text layoutX="483.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Our ref">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="535.0" layoutY="184.0" prefHeight="26.0" prefWidth="427.0" />
+      <Text layoutX="85.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Police ref">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="149.0" layoutY="216.0" prefHeight="26.0" prefWidth="351.0" />
+      <Text layoutX="514.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I/we understand that your policestation received a report on an accident involving" AnchorPane.rightAnchor="88.08099365234375">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="85.0" layoutY="250.0" prefHeight="26.0" prefWidth="975.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="14.0" />
+      <TextField layoutX="999.0" layoutY="216.0" prefHeight="26.0" prefWidth="67.0" AnchorPane.rightAnchor="14.0" />
+      <Text layoutX="79.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="of (address)" AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="165.0" layoutY="286.0" prefHeight="26.0" prefWidth="351.0" />
+      <Text layoutX="527.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Which occurred on (date)">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="683.0" layoutY="286.0" prefHeight="26.0" prefWidth="164.0" />
+      <Text layoutX="856.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="at (time and place)">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="966.0" layoutY="286.0" prefHeight="26.0" prefWidth="100.0" AnchorPane.rightAnchor="14.0" />
+      <TextField layoutX="86.0" layoutY="318.0" prefHeight="26.0" prefWidth="164.0" AnchorPane.leftAnchor="85.0" />
+      <Text layoutX="258.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="involving vehicle(s) Reg No." wrappingWidth="164.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="422.0" layoutY="318.0" prefHeight="26.0" prefWidth="100.0" />
+      <Text layoutX="531.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="make">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="570.0" layoutY="318.0" prefHeight="26.0" prefWidth="138.0" />
+      <Text layoutX="717.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="753.0" layoutY="318.0" prefHeight="26.0" prefWidth="131.0" />
+      <Text layoutX="893.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="make">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="933.0" layoutY="318.0" prefHeight="26.0" prefWidth="131.0" />
+      <Text layoutX="85.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of the police station where accident reported" wrappingWidth="304.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="336.0" layoutY="572.0" prefHeight="26.0" prefWidth="328.0" />
+      <Text layoutX="85.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From the records can you please furnish us with the following information:">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="85.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="106.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(a) Name and address of the owner of the vehicle Reg No.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="446.0" layoutY="410.0" prefHeight="26.0" prefWidth="614.0" AnchorPane.rightAnchor="14.0" />
+      <Text layoutX="106.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(b) Name of the Insurance Company">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="319.0" layoutY="439.0" prefHeight="26.0" prefWidth="744.0" AnchorPane.rightAnchor="14.0" />
+      <Text layoutX="106.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Has investigation been completed?">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="85.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="314.0" layoutY="468.0" prefWidth="150.0" />
+      <Text layoutX="108.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If so, has anyone been charged?">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="314.0" layoutY="497.0" prefWidth="150.0" />
+      <Text layoutX="108.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If this case is still under investigation is there any likelihood of either party being prosecuted?">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <ComboBox layoutX="653.0" layoutY="518.0" prefWidth="150.0" />
+      <Text layoutX="85.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3." AnchorPane.leftAnchor="83.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="108.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If it is intended to prefer charges, state:">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="106.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(a) Name of driver/cyclist/pedestrian">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="914.0" layoutY="572.0" prefHeight="26.0" prefWidth="222.0" AnchorPane.rightAnchor="14.0" />
+      <Text layoutX="684.0" layoutY="590.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(b) Vehicle registration No.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="83.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of charge">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="198.0" layoutY="601.0" prefHeight="26.0" prefWidth="164.0" />
+      <Text layoutX="374.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="395.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Court Case File No">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="513.0" layoutY="601.0" prefHeight="26.0" prefWidth="164.0" />
+      <Text layoutX="681.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/traffic charge Reg. No.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="822.0" layoutY="601.0" prefHeight="26.0" prefWidth="242.0" AnchorPane.rightAnchor="14.0" />
+      <Text layoutX="83.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6." AnchorPane.leftAnchor="83.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="104.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of investigation Officer">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="282.0" layoutY="633.0" prefHeight="26.0" prefWidth="390.0" />
+      <Text layoutX="684.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="705.0" layoutY="651.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results of investigations or prosecutions (if known)">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="1011.0" layoutY="633.0" prefHeight="26.0" prefWidth="55.0" />
+      <TextField layoutX="85.0" layoutY="668.0" prefHeight="26.0" prefWidth="390.0" />
+      <Text layoutX="485.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="506.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accident Register/OB Number">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="689.0" layoutY="668.0" prefHeight="26.0" prefWidth="164.0" />
+      <Text layoutX="856.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and date">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="917.0" layoutY="668.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.rightAnchor="14.0" />
+      <Text layoutX="85.0" layoutY="715.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9." AnchorPane.leftAnchor="85.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="106.0" layoutY="715.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Persons injured Names">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="309.0" layoutY="715.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class of the persons">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="479.0" layoutY="715.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="621.0" layoutY="715.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nature of injury">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="98.0" layoutY="726.0" prefHeight="37.0" prefWidth="200.0" />
+      <TextArea layoutX="314.0" layoutY="726.0" prefHeight="40.0" prefWidth="116.0" />
+      <TextArea layoutX="454.0" layoutY="726.0" prefHeight="40.0" prefWidth="116.0" />
+      <TextArea layoutX="610.0" layoutY="726.0" prefHeight="37.0" prefWidth="200.0" />
+      <Text layoutX="82.0" layoutY="779.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10." AnchorPane.leftAnchor="82.0">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="108.0" layoutY="779.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name of the Witnesses">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="586.0" layoutY="779.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="97.0" layoutY="789.0" prefHeight="40.0" prefWidth="351.0" />
+      <TextArea layoutX="595.0" layoutY="789.0" prefHeight="40.0" prefWidth="368.0" />
+      <Text layoutX="98.0" layoutY="850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="140.0" layoutY="832.0" prefHeight="26.0" prefWidth="164.0" />
+      <Text layoutX="571.0" layoutY="850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(Signed)">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="628.0" layoutY="832.0" prefHeight="26.0" prefWidth="92.0" />
+      <TextField layoutX="772.0" layoutY="832.0" prefHeight="26.0" prefWidth="93.0" />
+      <Text layoutX="870.0" layoutY="850.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Officer in Charge Police Station">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="88.0" layoutY="885.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11.">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="885.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When completed this form is to be returned to:">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="396.0" layoutY="885.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name and address of Insurance Company">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="636.0" layoutY="867.0" prefHeight="26.0" prefWidth="409.0" AnchorPane.rightAnchor="28.0" />
+      <Text layoutX="98.0" layoutY="915.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="135.0" layoutY="915.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Legal Representative or other interested party stating interest and/or connection with the accident">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="720.0" layoutY="897.0" prefHeight="26.0" prefWidth="333.0" />
+      <Text layoutX="98.0" layoutY="943.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signature of the person/Company Applying for the Abstarct">
+         <font>
+            <Font name="Lato Heavy" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="453.0" layoutY="925.0" prefHeight="26.0" prefWidth="228.0" />
+      <Text layoutX="431.0" layoutY="983.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note:">
+         <font>
+            <Font name="Lato Heavy Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="485.0" layoutY="983.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- When applying foward in triplicate to officer i/c Division">
+         <font>
+            <Font name="Lato Heavy Italic" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
