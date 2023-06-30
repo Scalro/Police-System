@@ -3,8 +3,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="750.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.P3FormController">
+<AnchorPane prefHeight="750.0" prefWidth="1080.0" style="-fx-background-color: #92b7d6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.P3FormController">
    <children>
       <Text layoutX="511.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P3 Forms" />
    </children>

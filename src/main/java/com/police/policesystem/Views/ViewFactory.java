@@ -1,27 +1,45 @@
 package com.police.policesystem.Views;
 
 import com.police.policesystem.Controllers.UserController;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class ViewsFactory {
-    private final StringProperty userSelectedMenuItem;
+public class ViewFactory {
+    private AccountType loginAccountType;
+
+    private final ObjectProperty<UserMenuOption> userSelectedMenuItem;
     private AnchorPane dashboardView;
     private AnchorPane caseReportAView;
     private AnchorPane caseReportBView;
     private AnchorPane accidentReportView;
-
     private AnchorPane p3ReportView;
 
-    public ViewsFactory(){
-        this.userSelectedMenuItem = new SimpleStringProperty("");
+
+    /* Admin */
+    private final ObjectProperty<AdminMenuOption> adminSelectedMenuItem;
+    private AnchorPane createUserView;
+    private AnchorPane viewUsersView;
+    private AnchorPane editView;
+    public ViewFactory(){
+        this.loginAccountType = AccountType.USER;
+        this.userSelectedMenuItem = new SimpleObjectProperty<>();
+        this.adminSelectedMenuItem = new SimpleObjectProperty<>();
     }
 
-    public StringProperty getUserSelectedMenuItem() {
+    public AccountType getLoginAccountType() {
+        return loginAccountType;
+    }
+
+    public void setLoginAccountType(AccountType loginAccountType) {
+        this.loginAccountType = loginAccountType;
+    }
+
+    public ObjectProperty<UserMenuOption> getUserSelectedMenuItem() {
         return userSelectedMenuItem;
     }
 
@@ -70,29 +88,76 @@ public class ViewsFactory {
         return accidentReportView;
     }
 
-    public AnchorPane getP3ReportView (){
-        if (p3ReportView == null){
+    public AnchorPane getP3ReportView() {
+        if (p3ReportView == null) {
             try {
                 p3ReportView = new FXMLLoader(getClass().getResource("/Fxml/P3Form.fxml")).load();
             }catch (Exception e){
                 e.printStackTrace();
             }
-
         }
         return p3ReportView;
     }
+
 
 
     public void showLoginWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
         createStage(loader);
     }
+
     public void showUserWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/User.fxml"));
         UserController userController = new UserController();
         loader.setController(userController);
 
         createStage(loader);
+    }
+    /*Admin*/
+
+    public ObjectProperty<AdminMenuOption> getAdminSelectedMenuItem() {
+        return adminSelectedMenuItem;
+    }
+
+    public void showAdminWidow(){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Admin/Admin.fxml"));
+        AdminController controller = new AdminController();
+        loader.setController(controller);
+        createStage(loader);
+    }
+
+    public AnchorPane getCreateUserView(){
+
+        if (createUserView == null) {
+            try {
+                createUserView = new FXMLLoader(getClass().getResource("/Fxml/Admin/CreateUser.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return createUserView;
+    }
+
+    public AnchorPane getViewUsersView() {
+        if (viewUsersView == null) {
+            try {
+                viewUsersView = new FXMLLoader(getClass().getResource("/Fxml/Admin/ViewUsers.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return viewUsersView;
+    }
+
+    public AnchorPane getEditView() {
+        if (editView == null) {
+            try {
+                editView = new FXMLLoader(getClass().getResource("/Fxml/Admin/Edit.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return editView;
     }
 
     public void createStage(FXMLLoader loader){
@@ -106,7 +171,9 @@ public class ViewsFactory {
         }
         Stage stage = new Stage();
         stage.setScene(scene);
-        stage.setTitle("Police");
+        stage.getIcons().add(new Image(String.valueOf(getClass().getResource("/Images/logo.png"))));
+        stage.setResizable(false);
+        stage.setTitle("Samis");
         stage.show();
     }
     public void closeStage(Stage stage){

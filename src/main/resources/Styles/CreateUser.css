@@ -1,0 +1,37 @@
+
+.create_user_container {
+    -fx-background-color: #eee;
+    -fx-padding: 10;
+    -fx-spacing: 15;
+}
+
+.create_user_container VBox {
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #000000;
+    -fx-padding: 10;
+}
+
+.create_user_container TextField{
+    -fx-pref-height: 35;
+    -fx-pref-width: 250;
+    -fx-background-color: #fff;
+    -fx-font-size: 1.3em;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3,0,0,3);
+}
+
+
+
+.create_user_container Button {
+    -fx-background-color: linear-gradient(to right,#020466,#0609c2);
+    -fx-pref-width: 250;
+    -fx-font-size: 1.3em;
+    -fx-text-fill: #fff;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3,0,0,3);
+}
+
+.create_user_container Button:hover {
+    -fx-cursor: hand;
+    -fx-background-color: #6264f5;
+}
+

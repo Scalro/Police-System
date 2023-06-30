@@ -1,12 +1,15 @@
 package com.police.policesystem.Controllers;
 
 import com.police.policesystem.Models.Model;
+import com.police.policesystem.Views.UserMenuOption;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+
 
 public class UserMenuController implements Initializable {
 
@@ -40,19 +43,19 @@ public class UserMenuController implements Initializable {
         p3report_btn.setOnAction(event -> onP3Report());
     }
     public void onDashboard(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("Dashboard");
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.DASHBOARD);
     }
     public void onCaseReportA(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("CaseReportA");
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.CASEREPORTA);
     }
 
     public void onCaseReportB(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("CaseReportB");
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.CASEREPORTB);
     }
     public void onAccidentReport(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("AccidentReport");
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.ACCIDENTREPORT);
     }
     public void onP3Report(){
-        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set("P3Report");
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.P3REPORT);
     }
 }

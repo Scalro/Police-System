@@ -17,14 +17,14 @@
 /*Login Container*/
 
 .account_choice {
-    -fx-background-color: #8c8c91;
+    -fx-background-color: #6b011a;
 }
 .account_choice .label {
-    -fx-text-fill: #0000ff ;
+    -fx-text-fill: #ffee00;
     -fx-font-size: 1.1em;
 }
 .account_choice .arrow {
-    -fx-background-color: #ffffff;
+    -fx-background-color: #ffee00;
 }
 
 /* login form*/

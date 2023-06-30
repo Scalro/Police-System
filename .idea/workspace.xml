@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="658ea791-3d60-4d21-8f27-6697aca199c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/P3FormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/P3Form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_12_23,_5_06_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_12_23__5_06_AM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/AccountType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/AdminMenuOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/UserMenuOption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/ViewFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Admin.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/ViewsFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/ViewsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/AccidentReport.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/AccidentReport.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/ViewsFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/P3Form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/P3Form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -52,15 +58,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/scalrotech/IdeaProjects/Police-System/src/main/resources/Fxml&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/scalrotech/IdeaProjects/Samis-Attendance"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/Fxml" />
