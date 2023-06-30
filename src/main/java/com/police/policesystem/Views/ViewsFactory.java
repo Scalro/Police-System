@@ -15,6 +15,8 @@ public class ViewsFactory {
     private AnchorPane caseReportBView;
     private AnchorPane accidentReportView;
 
+    private AnchorPane p3ReportView;
+
     public ViewsFactory(){
         this.userSelectedMenuItem = new SimpleStringProperty("");
     }
@@ -68,6 +70,19 @@ public class ViewsFactory {
         return accidentReportView;
     }
 
+    public AnchorPane getP3ReportView (){
+        if (p3ReportView == null){
+            try {
+                p3ReportView = new FXMLLoader(getClass().getResource("/Fxml/P3Form.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+        }
+        return p3ReportView;
+    }
+
+
     public void showLoginWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
         createStage(loader);
@@ -91,7 +106,7 @@ public class ViewsFactory {
         }
         Stage stage = new Stage();
         stage.setScene(scene);
-        stage.setTitle("Samis");
+        stage.setTitle("Police");
         stage.show();
     }
     public void closeStage(Stage stage){
