@@ -1,6 +1,6 @@
 package com.police.policesystem.Controllers.Admin;
 
-import com.samis.biometrics.Models.DatabaseConnection;
+import com.police.policesystem.Models.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -51,10 +51,6 @@ public class CreateUserController implements Initializable {
             alert.setContentText("User Added Successfully!");
             alert.showAndWait();
 
-            // Refresh the user list and update the table view
-            ViewUsersController viewUsersController = new ViewUsersController();
-            viewUsersController.refreshData();
-            viewUsersController.viewUserTbl.refresh();
         } catch (Exception e) {
             throw new RuntimeException("Cannot Add User", e);
         }

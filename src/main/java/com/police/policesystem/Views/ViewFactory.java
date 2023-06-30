@@ -1,5 +1,6 @@
 package com.police.policesystem.Views;
 
+import com.police.policesystem.Controllers.Admin.AdminController;
 import com.police.policesystem.Controllers.UserController;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;

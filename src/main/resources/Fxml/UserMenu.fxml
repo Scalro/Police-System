@@ -56,7 +56,7 @@
                         <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
                      </graphic>
                   </Button>
-                  <Button fx:id="logout_btn" layoutX="10.0" layoutY="117.0" mnemonicParsing="false" styleClass="alt_menu_btn" text="Logout">
+                  <Button fx:id="logout_btn" layoutX="10.0" layoutY="117.0" mnemonicParsing="false" onAction="#setLogout_btn" styleClass="alt_menu_btn" text="Logout">
                      <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="20" />
                      </graphic>

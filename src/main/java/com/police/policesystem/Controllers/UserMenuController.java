@@ -2,9 +2,12 @@ package com.police.policesystem.Controllers;
 
 import com.police.policesystem.Models.Model;
 import com.police.policesystem.Views.UserMenuOption;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -30,6 +33,16 @@ public class UserMenuController implements Initializable {
     public Button report_btn;
     @FXML
     public Button userprofile_btn;
+    @FXML
+    public void setLogout_btn(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Logout");
+        alert.setHeaderText(null);
+        alert.setContentText("Logged out successfully!");
+        alert.showAndWait();
+        Stage stage = (Stage) logout_btn.getScene().getWindow();
+        stage.close();
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         addListeners();

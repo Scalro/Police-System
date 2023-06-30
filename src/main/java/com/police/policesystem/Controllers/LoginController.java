@@ -1,5 +1,6 @@
 package com.police.policesystem.Controllers;
 
+import com.police.policesystem.Models.DatabaseConnection;
 import com.police.policesystem.Models.Model;
 import com.police.policesystem.Views.AccountType;
 import javafx.collections.FXCollections;
@@ -9,6 +10,9 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 public class LoginController implements Initializable {
@@ -32,7 +36,96 @@ public class LoginController implements Initializable {
     }
     private void onLogin(){
         Stage stage = (Stage) err_lbl.getScene().getWindow();
-        Model.getInstance().getViewsFactory().closeStage(stage);
-        Model.getInstance().getViewsFactory().showUserWindow();
+        if (Model.getInstance().getViewsFactory().getLoginAccountType() == AccountType.USER) {
+            if (!(lgn_username_field.getText().isBlank() && login_passw_fld.getText().isBlank())) {
+                if (validateULogin()) {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Login");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Logged In successfully!");
+                    alert.showAndWait();
+                    Model.getInstance().getViewsFactory().showUserWindow();
+                    Model.getInstance().getViewsFactory().closeStage(stage);
+                } else {
+                    err_lbl.setText("Wrong username or password");
+                }
+            } else {
+                err_lbl.setText("Please enter username and password");
+            }
+        } else {
+            if (Model.getInstance().getViewsFactory().getLoginAccountType() == AccountType.ADMIN) {
+                if (!(lgn_username_field.getText().isBlank() && login_passw_fld.getText().isBlank())) {
+                    if (validateALogin()) {
+                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                        alert.setTitle("Login");
+                        alert.setHeaderText(null);
+                        alert.setContentText("Logged In successfully!");
+                        alert.showAndWait();
+                        Model.getInstance().getViewsFactory().showAdminWidow();
+                        Model.getInstance().getViewsFactory().closeStage(stage);
+                    } else {
+                        err_lbl.setText("Wrong username or password");
+                    }
+                }
+            }
+        }
+    }
+
+    public boolean validateULogin() {
+        DatabaseConnection connect = new DatabaseConnection();
+        Connection connection = connect.ConnectDb();
+
+        String verifyLogin = "SELECT count(1) FROM users WHERE username = ? AND password = ?";
+        try {
+            PreparedStatement statement = connection.prepareStatement(verifyLogin);
+            statement.setString(1, lgn_username_field.getText());
+            statement.setString(2, login_passw_fld.getText());
+            ResultSet rs = statement.executeQuery();
+
+            if (rs.next() && rs.getInt(1) == 1) {
+                err_lbl.setText("Login Successful");
+                return true;
+            } else {
+                err_lbl.setText("Wrong username or password");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
+    }
+
+    public boolean validateALogin() {
+        DatabaseConnection connect = new DatabaseConnection();
+        Connection connection = connect.ConnectDb();
+
+        String verifyLogin = "SELECT count(1) FROM admin WHERE username = ? AND password = ?";
+        try {
+            PreparedStatement statement = connection.prepareStatement(verifyLogin);
+            statement.setString(1, lgn_username_field.getText());
+            statement.setString(2, login_passw_fld.getText());
+            ResultSet rs = statement.executeQuery();
+
+            if (rs.next() && rs.getInt(1) == 1) {
+                err_lbl.setText("Login Successful");
+                return true;
+            } else {
+                err_lbl.setText("Wrong username or password");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return false;
     }
 }
