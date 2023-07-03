@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane prefHeight="750.0" prefWidth="1080.0" style="-fx-background-color: #92b7d6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.P3FormController">
-   <children>
-      <Text layoutX="511.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P3 Forms" />
-   </children>
-</AnchorPane>
+<StackPane fx:id="stackPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainController">
+    <fx:include fx:id="page1" source="Page1.fxml"/>
+    <fx:include fx:id="page2" source="Page2.fxml"/>
+    <fx:include fx:id="page3" source="Page3.fxml"/>
+    <fx:include fx:id="page4" source="Page4.fxml"/>
+</StackPane>
