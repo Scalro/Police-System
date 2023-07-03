@@ -27,7 +27,7 @@
                </font>
             </Text>
             <TextField fx:id="lastNameTfld" />
-            <Text layoutX="20.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserName">
+            <Text layoutX="20.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UserID">
                <font>
                   <Font name="Lato Black" size="18.0" />
                </font>
@@ -39,7 +39,7 @@
                </font>
             </Text>
             <TextField fx:id="passwordTfld" />
-            <Text layoutX="10.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category">
+            <Text layoutX="10.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rank">
                <font>
                   <Font name="Lato Black" size="18.0" />
                </font>

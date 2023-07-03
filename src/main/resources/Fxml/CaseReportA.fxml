@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -22,36 +23,36 @@
          <Font name="Lato Black Italic" size="14.0" />
       </font>
    </Text>
-   <TextField layoutX="54.0" layoutY="172.0" prefHeight="26.0" prefWidth="378.0" />
+   <TextField fx:id="a1" layoutX="54.0" layoutY="172.0" prefHeight="26.0" prefWidth="378.0" />
    <Text layoutX="30.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO:">
       <font>
          <Font name="FreeSans Bold" size="13.0" />
       </font>
    </Text>
-   <TextField layoutX="632.0" layoutY="171.0" prefHeight="26.0" prefWidth="365.0" />
-   <TextField layoutX="173.0" layoutY="223.0" prefHeight="26.0" prefWidth="365.0" />
-   <TextField layoutX="673.0" layoutY="223.0" prefHeight="26.0" prefWidth="385.0" AnchorPane.rightAnchor="22.0" />
-   <TextField layoutX="269.0" layoutY="272.0" prefHeight="26.0" prefWidth="687.0">
+   <TextField fx:id="a2" layoutX="632.0" layoutY="171.0" prefHeight="26.0" prefWidth="365.0" />
+   <TextField fx:id="a3" layoutX="173.0" layoutY="223.0" prefHeight="26.0" prefWidth="365.0" />
+   <TextField fx:id="a4" layoutX="673.0" layoutY="223.0" prefHeight="26.0" prefWidth="385.0" AnchorPane.rightAnchor="22.0" />
+   <TextField fx:id="a5" layoutX="269.0" layoutY="272.0" prefHeight="26.0" prefWidth="687.0">
       <cursor>
          <Cursor fx:constant="SE_RESIZE" />
       </cursor>
    </TextField>
-   <TextField layoutX="130.0" layoutY="323.0" prefHeight="26.0" prefWidth="359.0" />
-   <TextField layoutX="722.0" layoutY="323.0" prefHeight="26.0" prefWidth="336.0" AnchorPane.rightAnchor="22.0" />
-   <TextField layoutX="234.0" layoutY="373.0" prefHeight="26.0" prefWidth="378.0" />
+   <TextField fx:id="a6" layoutX="130.0" layoutY="323.0" prefHeight="26.0" prefWidth="359.0" />
+   <TextField fx:id="a7" layoutX="722.0" layoutY="323.0" prefHeight="26.0" prefWidth="336.0" AnchorPane.rightAnchor="22.0" />
+   <TextField fx:id="a8" layoutX="234.0" layoutY="373.0" prefHeight="26.0" prefWidth="378.0" />
    <Text layoutX="344.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OFFICER IN CHARGE POLICE STATION." underline="true" AnchorPane.leftAnchor="344.0">
       <font>
          <Font name="Lato Black Italic" size="13.0" />
       </font>
    </Text>
-   <TextField layoutX="659.0" layoutY="421.0" />
-   <TextField layoutX="125.0" layoutY="509.0" />
+   <TextField fx:id="a9" layoutX="659.0" layoutY="421.0" />
+   <TextField fx:id="a11" layoutX="125.0" layoutY="509.0" />
    <Text layoutX="497.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Abstract Form is free of charge">
       <font>
          <Font name="Lato Black Italic" size="14.0" />
       </font>
    </Text>
-   <TextField layoutX="255.0" layoutY="464.0" prefHeight="26.0" prefWidth="788.0" AnchorPane.rightAnchor="14.0" />
+   <TextField fx:id="a10" layoutX="255.0" layoutY="464.0" prefHeight="26.0" prefWidth="788.0" AnchorPane.rightAnchor="14.0" />
    <Text layoutX="448.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABSTARCT REGISTER NO:">
       <font>
          <Font name="FreeSans Bold" size="13.0" />
@@ -112,4 +113,9 @@
          <Font name="FreeSans Bold" size="13.0" />
       </font>
    </Text>
+   <Button fx:id="saveAButton" layoutX="503.0" layoutY="577.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
+      <font>
+         <Font name="Lato Heavy" size="18.0" />
+      </font>
+   </Button>
 </AnchorPane>

@@ -32,7 +32,7 @@
                   <String fx:value="account_choice" />
                   <String fx:value="arrow" />
                </styleClass></ChoiceBox>
-            <Label text="Enter Your UserName:">
+            <Label text="Enter Your UserID:">
                <font>
                   <Font name="Lato Black" size="13.0" />
                </font></Label>
