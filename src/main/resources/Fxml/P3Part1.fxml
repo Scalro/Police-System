@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.police.policesystem.Controllers.p3FormsControllers.P3Part1Controller"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="page1" prefHeight="750.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.p3FormsControllers.P3Part1Controller">
+   <children>
+      <Text layoutX="484.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P3Form Part 1">
+         <font>
+            <Font name="Lato Heavy Italic" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</VBox>
