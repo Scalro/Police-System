@@ -2,6 +2,7 @@ package com.police.policesystem.Controllers;
 
 import com.police.policesystem.Models.DatabaseConnection;
 import com.police.policesystem.Models.Model;
+import com.police.policesystem.Sessions.Session;
 import com.police.policesystem.Views.AccountType;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
@@ -44,6 +45,7 @@ public class LoginController implements Initializable {
                     alert.setHeaderText(null);
                     alert.setContentText("Logged In successfully!");
                     alert.showAndWait();
+                    Session.savePreference("username", lgn_username_field.getText());
                     Model.getInstance().getViewsFactory().showUserWindow();
                     Model.getInstance().getViewsFactory().closeStage(stage);
                 } else {

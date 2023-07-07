@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="750.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.CasesController">
+   <children>
+      <Text layoutX="518.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cases">
+         <font>
+            <Font name="Lato Heavy Italic" size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="casesTbl" layoutX="40.0" layoutY="177.0" prefHeight="480.0" prefWidth="953.0">
+        <columns>
+          <TableColumn fx:id="idTbl" prefWidth="66.0" text="ID" />
+          <TableColumn fx:id="openCasesTbl" prefWidth="206.0" text="OpenCases" />
+            <TableColumn fx:id="closedCasesTbl" prefWidth="184.0" text="ClosedCases" />
+            <TableColumn fx:id="otherCasesTbl" prefWidth="163.0" text="otherCases" />
+            <TableColumn fx:id="accCasesTbl" prefWidth="171.0" text="accidentCases" />
+            <TableColumn fx:id="p3CasesTbl" minWidth="0.0" prefWidth="162.0" text="p3Cases" />
+        </columns>
+      </TableView>
+      <Text layoutX="129.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Item:">
+         <font>
+            <Font name="Lato Heavy Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchTfld" layoutX="233.0" layoutY="137.0" prefHeight="26.0" prefWidth="606.0" promptText="Search...." />
+   </children>
+</AnchorPane>

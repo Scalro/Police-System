@@ -32,7 +32,7 @@ public class UserMenuController implements Initializable {
     @FXML
     public Button report_btn;
     @FXML
-    public Button userprofile_btn;
+    public Button casesButton;
     @FXML
     public void setLogout_btn(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -54,6 +54,7 @@ public class UserMenuController implements Initializable {
         casesreport_btn1.setOnAction(event -> onCaseReportB());
         accidentreport_btn.setOnAction(event ->  onAccidentReport());
         p3report_btn.setOnAction(event -> onP3Report());
+        casesButton.setOnAction(event -> onCases());
     }
     public void onDashboard(){
         Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.DASHBOARD);
@@ -70,5 +71,9 @@ public class UserMenuController implements Initializable {
     }
     public void onP3Report(){
         Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.P3REPORT);
+    }
+
+    public void onCases(){
+        Model.getInstance().getViewsFactory().getUserSelectedMenuItem().set(UserMenuOption.CASES);
     }
 }

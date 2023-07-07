@@ -19,6 +19,7 @@ public class ViewFactory {
     private AnchorPane caseReportBView;
     private AnchorPane accidentReportView;
     private AnchorPane p3ReportView;
+    private AnchorPane casesView;
 
 
     /* Admin */
@@ -100,7 +101,16 @@ public class ViewFactory {
         return p3ReportView;
     }
 
-
+    public AnchorPane getCasesView() {
+        if (casesView == null) {
+            try {
+                casesView= new FXMLLoader(getClass().getResource("/Fxml/Cases.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return casesView;
+    }
 
     public void showLoginWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));

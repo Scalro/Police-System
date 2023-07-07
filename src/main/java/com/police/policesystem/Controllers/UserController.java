@@ -18,6 +18,7 @@ public class UserController implements Initializable {
                 case CASEREPORTB -> user_parent.setCenter(Model.getInstance().getViewsFactory().getCaseReportBView());
                 case ACCIDENTREPORT -> user_parent.setCenter(Model.getInstance().getViewsFactory().getAccidentReportView());
                 case P3REPORT -> user_parent.setCenter(Model.getInstance().getViewsFactory().getP3ReportView());
+                case CASES -> user_parent.setCenter(Model.getInstance().getViewsFactory().getCasesView());
                 default -> user_parent.setCenter(Model.getInstance().getViewsFactory().getDashboardView());
             }
         } );

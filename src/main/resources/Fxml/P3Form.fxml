@@ -2,9 +2,10 @@
 
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="stackPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.P3FormController">
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:id="anchorPane" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.P3FormController">
     <fx:include fx:id="page1" source="P3Part1.fxml"/>
     <fx:include fx:id="page2" source="P3Part2.fxml"/>
     <fx:include fx:id="page3" source="P3Part3.fxml"/>
     <fx:include fx:id="page4" source="P3Part4.fxml"/>
-</StackPane>
+</AnchorPane>

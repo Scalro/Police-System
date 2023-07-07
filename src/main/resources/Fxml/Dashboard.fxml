@@ -10,14 +10,14 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1080.0" styleClass="dashboard" stylesheets="@../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.DashboardController">
-   <Text layoutX="37.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="username" text="Hi, User" wrappingWidth="110.84099578857422" AnchorPane.leftAnchor="37.0" />
-   <Label layoutX="761.0" layoutY="46.0" prefHeight="18.0" styleClass="date_lbl" text="08, June 2023" AnchorPane.rightAnchor="14.0" />
+   <Text layoutX="37.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="username" text="Hi," wrappingWidth="37.14285659790039" AnchorPane.leftAnchor="37.0" />
+   <Label fx:id="dateLabel" layoutX="761.0" layoutY="46.0" prefHeight="18.0" styleClass="date_lbl" AnchorPane.rightAnchor="14.0" />
    <HBox layoutX="56.0" layoutY="144.0" prefHeight="142.0" prefWidth="760.0" styleClass="cases_view" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
       <AnchorPane prefHeight="122.0" prefWidth="240.0">
          <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL OPEN CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
-         <Label layoutX="35.0" layoutY="62.0" styleClass="cases" text="15" />
+         <Label fx:id="openCasesCard" layoutX="35.0" layoutY="62.0" styleClass="cases" />
          <FontAwesomeIconView fill="WHITE" glyphName="BOOK" layoutX="127.0" layoutY="85.0" size="40" />
-         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="6 Closed" />
+         <Label fx:id="openClosed" layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="6 Closed" />
          <styleClass>
             <String fx:value="cases_card" />
             <String fx:value="cases_gradient" />
@@ -25,8 +25,8 @@
       </AnchorPane>
       <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="122.0" prefWidth="240.0">
          <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL OTHER CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
-         <Label layoutX="35.0" layoutY="62.0" styleClass="cases" text="7" />
-         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="3 Closed" />
+         <Label fx:id="otherCases" layoutX="35.0" layoutY="62.0" styleClass="cases" text="7" />
+         <Label fx:id="otherClosed" layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="3 Closed" />
          <FontAwesomeIconView fill="WHITE" glyphName="ADDRESS_BOOK" layoutX="127.0" layoutY="85.0" size="40" />
          <styleClass>
             <String fx:value="cases_card" />
@@ -35,9 +35,9 @@
       </AnchorPane>
       <AnchorPane layoutX="200.0" layoutY="10.0" prefHeight="122.0" prefWidth="240.0">
          <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL ACCIDENT CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
-         <Label layoutX="35.0" layoutY="62.0" prefHeight="28.0" prefWidth="15.0" styleClass="cases" text="3" />
+         <Label fx:id="accidentCases" layoutX="35.0" layoutY="62.0" prefHeight="28.0" prefWidth="15.0" styleClass="cases" text="3" />
          <FontAwesomeIconView fill="WHITE" glyphName="EXCLAMATION_TRIANGLE" layoutX="127.0" layoutY="85.0" size="40" />
-         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="2 Closed" />
+         <Label fx:id="accidentClosed" layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="2 Closed" />
          <styleClass>
             <String fx:value="cases_card" />
             <String fx:value="cases_gradient" />
@@ -45,8 +45,8 @@
       </AnchorPane>
       <AnchorPane layoutX="390.0" layoutY="10.0" prefHeight="122.0" prefWidth="240.0">
          <Text layoutX="35.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="cases_title" text="TOTAL P3 CASES" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0" />
-         <Label layoutX="35.0" layoutY="62.0" prefHeight="28.0" prefWidth="34.0" styleClass="cases" text="5" />
-         <Label layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="1 Closed" />
+         <Label fx:id="p3Cases" layoutX="35.0" layoutY="62.0" prefHeight="28.0" prefWidth="34.0" styleClass="cases" text="5" />
+         <Label fx:id="p3Closed" layoutX="58.0" layoutY="96.0" styleClass="cases_closed" text="1 Closed" />
          <FontAwesomeIconView fill="WHITE" glyphName="FILE" layoutX="127.0" layoutY="85.0" size="40" />
          <styleClass>
             <String fx:value="cases_card" />
@@ -66,4 +66,9 @@
    </Text>
    <Text layoutX="883.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="texts" text="Recently Closed Cases" AnchorPane.rightAnchor="14.0" />
    <ListView layoutX="567.0" layoutY="329.0" prefHeight="377.0" prefWidth="520.0" AnchorPane.rightAnchor="14.0" />
+   <Label fx:id="username_lbl" layoutX="74.0" layoutY="48.0" textFill="#090051">
+      <font>
+         <Font name="Lato Heavy Italic" size="18.0" />
+      </font>
+   </Label>
 </AnchorPane>

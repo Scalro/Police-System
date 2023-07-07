@@ -56,7 +56,7 @@
                      </graphic>
                   </Button>
                   <Line endX="46.29289245605469" endY="-0.621320366859436" startX="-100.0" />
-                  <Button fx:id="userprofile_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="User Profile">
+                  <Button fx:id="casesButton" mnemonicParsing="false" styleClass="alt_menu_btn" text="Cases">
                      <graphic>
                         <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
                      </graphic>

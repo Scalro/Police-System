@@ -5,5 +5,6 @@ public enum UserMenuOption {
     CASEREPORTA,
     CASEREPORTB,
     ACCIDENTREPORT,
-    P3REPORT
+    P3REPORT,
+    CASES
 }
