@@ -1,9 +1,9 @@
 .main_menu_container {
-   -fx-background-color: #eee;
+   -fx-background-color: #c9a906;
     -fx-alignment: center;
 }
 .left_container{
-    -fx-background-color: #cccaca;
+    -fx-background-color: #a61d02;
     -fx-background-radius: 10;
     -fx-effect: dropshadow(two-pass-box,#AAAAAA,5, 0, 0, 4);
 }

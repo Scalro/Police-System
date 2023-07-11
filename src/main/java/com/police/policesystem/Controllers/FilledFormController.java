@@ -2,7 +2,7 @@ package com.police.policesystem.Controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
@@ -11,83 +11,82 @@ import java.util.ResourceBundle;
 public class FilledFormController implements Initializable {
     // Define FXML fields
 
-    @FXML
-    public TextField a1TextField;
 
     @FXML
-    public TextField a11TextField;
+    public TextField a1;
 
     @FXML
-    public TextField a10TextField;
+    public TextField a5;
 
     @FXML
-    public TextField a2TextField;
+    public TextField a2;
 
     @FXML
-    public TextField a3TextField;
+    public TextField a3;
 
     @FXML
-    public TextField a4TextField;
+    public TextField a4;
+    @FXML
+    public TextField a6;
 
     @FXML
-    public TextField a5TextField;
+    public TextField a7;
 
     @FXML
-    public TextField a6TextField;
+    public TextField a8;
 
     @FXML
-    public TextField a7TextField;
+    public TextArea a9;
 
     @FXML
-    public TextField a8TextField;
+    public TextField caseRefNo;
 
     @FXML
-    public TextField a9TextField;
+    public TextField dateReported;
 
 
     // Define methods to set and retrieve field values
-    public void setFieldValues(String a1Value, String a2Value, String a3Value, String a4Value, String a5Value,
-                               String a6Value, String a7Value, String a8Value, String a9Value, String a10Value,
-                               String a11Value) {
+    public void setFieldValues(String a1Value, String a2Value, String caseRefNoValue, String a3Value, String a4Value,
+                               String dateReportedValue, String a5Value, String a6Value, String a7Value, String a8Value,String a9Value) {
         // Set the field values in the respective UI components
-        a1TextField.setText(a1Value);
-        a2TextField.setText(a2Value);
-        a3TextField.setText(a3Value);
-        a4TextField.setText(a4Value);
-        a5TextField.setText(a5Value);
-        a6TextField.setText(a6Value);
-        a7TextField.setText(a7Value);
-        a8TextField.setText(a8Value);
-        a9TextField.setText(a9Value);
-        a10TextField.setText(a10Value);
-        a11TextField.setText(a11Value);
+        a1.setText(a1Value);
+        a2.setText(a2Value);
+        caseRefNo.setText(caseRefNoValue);
+        a3.setText(a3Value);
+        a4.setText(a4Value);
+        dateReported.setText(dateReportedValue);
+        a5.setText(a5Value);
+        a6.setText(a6Value);
+        a7.setText(a7Value);
+        a8.setText(a8Value);
+        a9.setText(a9Value);
     }
 
     public String getFieldValue(String fieldName) {
         // Retrieve the value from the respective UI component based on the field name
         switch (fieldName) {
             case "a1":
-                return a1TextField.getText();
+                return a1.getText();
             case "a2":
-                return a2TextField.getText();
+                return a2.getText();
             case "a3":
-                return a3TextField.getText();
+                return caseRefNo.getText();
             case "a4":
-                return a4TextField.getText();
+                return a3.getText();
             case "a5":
-                return a5TextField.getText();
+                return a4.getText();
             case "a6":
-                return a6TextField.getText();
+                return dateReported.getText();
             case "a7":
-                return a7TextField.getText();
+                return a5.getText();
             case "a8":
-                return a8TextField.getText();
+                return a6.getText();
             case "a9":
-                return a9TextField.getText();
+                return a7.getText();
             case "a10":
-                return a10TextField.getText();
+                return a8.getText();
             case "a11":
-                return a11TextField.getText();
+                return a9.getText();
             default:
                 return "";
         }

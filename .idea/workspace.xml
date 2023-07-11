@@ -5,31 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="658ea791-3d60-4d21-8f27-6697aca199c7" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/filled_form.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/CasesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/FilledFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/Case.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/caseA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Sessions/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReporta.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Cases.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/AdminDashboardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/FilledFormBController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AdminDashboard.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportb.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/police.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filled_form.png" beforeDir="false" afterPath="$PROJECT_DIR$/filled_form.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/AdminMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/CreateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/CreateUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/ViewUsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/ViewUsersController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/CaseReportAController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/CaseReportAController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/CaseReportBController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/CaseReportBController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/CasesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin/CasesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/FilledFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/FilledFormController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/P3FormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/P3FormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/UserMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/UserMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/UserMenuOption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Models/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/AdminMenuOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/AdminMenuOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/police/policesystem/Views/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/AccidentReport.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/AccidentReport.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AdminMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/CreateUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/CreateUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/ViewUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/ViewUsers.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportA.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportA.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportB.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReportB.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReporta.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/CaseReporta.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Cases.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Cases.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/P3Form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/P3Form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/P3Part2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/P3Part2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/UserMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/UserMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/Admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/UserMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/UserMenu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +93,14 @@
       <recent name="$PROJECT_DIR$/src/main/resources/Fxml/Admin" />
       <recent name="$PROJECT_DIR$/src/main/java/com/police/policesystem/Controllers/Admin" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/Fxml/Admin" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.police.policesystem.Controllers" />
+      <recent name="com.police.policesystem.Controllers.Admin" />
       <recent name="com.police.policesystem.Sessions" />
       <recent name="com.police.policesystem.Models" />
-      <recent name="com.police.policesystem.Controllers.Admin" />
-      <recent name="com.police.policesystem.Controllers" />
       <recent name="com.police.policesystem.Views" />
     </key>
   </component>

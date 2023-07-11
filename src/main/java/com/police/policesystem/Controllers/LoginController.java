@@ -15,6 +15,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
+import java.util.function.UnaryOperator;
 
 public class LoginController implements Initializable {
     @FXML
@@ -27,6 +28,18 @@ public class LoginController implements Initializable {
     public TextField lgn_username_field;
     @FXML
     public PasswordField login_passw_fld;
+    @FXML
+    public Button cancelButton;
+
+    private UnaryOperator<TextFormatter.Change> createNumericFilter() {
+        return change -> {
+            String input = change.getText();
+            if (input.matches("[0-9]*")) {
+                return change;
+            }
+            return null;
+        };
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -34,6 +47,8 @@ public class LoginController implements Initializable {
         acc_choice.setValue(Model.getInstance().getViewsFactory().getLoginAccountType());
         acc_choice.valueProperty().addListener(observable -> Model.getInstance().getViewsFactory().setLoginAccountType(acc_choice.getValue()));
         lgn_btn.setOnAction(event ->onLogin());
+        cancelButton.setOnAction(event -> onExit());
+        lgn_username_field.setTextFormatter(new TextFormatter<>(createNumericFilter()));
     }
     private void onLogin(){
         Stage stage = (Stage) err_lbl.getScene().getWindow();
@@ -73,6 +88,10 @@ public class LoginController implements Initializable {
         }
     }
 
+    public void onExit(){
+        Stage stage = (Stage) cancelButton.getScene().getWindow();
+        stage.close();
+    }
     public boolean validateULogin() {
         DatabaseConnection connect = new DatabaseConnection();
         Connection connection = connect.ConnectDb();

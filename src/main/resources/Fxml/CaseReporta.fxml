@@ -1,126 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="750.0" prefWidth="1080.0" style="-fx-background-color: #92b7d6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.FilledFormController">
-   <Text layoutX="482.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cases Report FormA" AnchorPane.leftAnchor="482.0" AnchorPane.rightAnchor="482.0" AnchorPane.topAnchor="14.0">
-      <font>
-         <Font name="Lato Black Italic" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="55.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPUBLIC OF KENYA" underline="true" AnchorPane.leftAnchor="30.0">
-      <font>
-         <Font name="Lato Black Italic" size="17.0" />
-      </font>
-   </Text>
-   <Text layoutX="31.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABSTRACT FROM POLICE RECORDS" underline="true">
-      <font>
-         <Font name="Lato Black Italic" size="14.0" />
-      </font>
-   </Text>
-   <TextField fx:id="a1TextField" layoutX="54.0" layoutY="172.0" prefHeight="26.0" prefWidth="378.0" />
-   <Text layoutX="30.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO:">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <TextField fx:id="a2TextField" layoutX="632.0" layoutY="171.0" prefHeight="26.0" prefWidth="365.0" />
-   <TextField fx:id="a3TextField" layoutX="173.0" layoutY="223.0" prefHeight="26.0" prefWidth="365.0" />
-   <TextField fx:id="a4TextField" layoutX="673.0" layoutY="223.0" prefHeight="26.0" prefWidth="385.0" AnchorPane.rightAnchor="22.0" />
-   <TextField fx:id="a5TextField" layoutX="269.0" layoutY="272.0" prefHeight="26.0" prefWidth="687.0">
-      <cursor>
-         <Cursor fx:constant="SE_RESIZE" />
-      </cursor>
-   </TextField>
-   <TextField fx:id="a6TextField" layoutX="130.0" layoutY="323.0" prefHeight="26.0" prefWidth="359.0" />
-   <TextField fx:id="a7TextField" layoutX="722.0" layoutY="323.0" prefHeight="26.0" prefWidth="336.0" AnchorPane.rightAnchor="22.0" />
-   <TextField fx:id="a8TextField" layoutX="234.0" layoutY="373.0" prefHeight="26.0" prefWidth="378.0" />
-   <Text layoutX="344.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OFFICER IN CHARGE POLICE STATION." underline="true" AnchorPane.leftAnchor="344.0">
-      <font>
-         <Font name="Lato Black Italic" size="13.0" />
-      </font>
-   </Text>
-   <TextField fx:id="a9TextField" layoutX="659.0" layoutY="421.0" />
-   <TextField fx:id="a11TextField" layoutX="125.0" layoutY="509.0" />
-   <Text layoutX="497.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Abstract Form is free of charge">
-      <font>
-         <Font name="Lato Black Italic" size="14.0" />
-      </font>
-   </Text>
-   <TextField fx:id="a10TextField" layoutX="255.0" layoutY="464.0" prefHeight="26.0" prefWidth="788.0" AnchorPane.rightAnchor="14.0" />
-   <Text layoutX="448.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABSTARCT REGISTER NO:">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="30.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POLICE REFERENCE:">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="546.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MISC. RECEIPT NO:">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="31.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WE HAVE CONFIRMED THE REPORT">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="963.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WHICH WAS">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="31.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORTED AT">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="493.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POLICE STATION.">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="623.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CASE FILE NO.">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="32.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME OF THE COMPLAINANT:">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="32.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IT IS FURTHER NOTED THAT THE PROPERTY INVOLED WAS ESTIMATED TO THE VALUE OF KSH.">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="32.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DETAILS OF PROPERTY RECOVERED:">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Text layoutX="32.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGNATURE:">
-      <font>
-         <Font name="FreeSans Bold" size="13.0" />
-      </font>
-   </Text>
-   <Button fx:id="saveAButton" layoutX="503.0" layoutY="577.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Save" textFill="WHITE">
-      <font>
-         <Font name="Lato Heavy" size="18.0" />
-      </font>
-   </Button>
-   <Button fx:id="printAButton" layoutX="625.0" layoutY="577.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Print" textFill="WHITE">
-      <font>
-         <Font name="Lato Heavy" size="18.0" />
-      </font>
-   </Button>
+<AnchorPane prefHeight="750.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.FilledFormController">
+    <Text layoutX="220.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPUBLIC OF KENYA" underline="true" AnchorPane.leftAnchor="220.0">
+        <font>
+            <Font name="Lato Black Italic" size="17.0" />
+        </font>
+    </Text>
+    <Text layoutX="221.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABSTRACT FROM POLICE RECORDS" underline="true">
+        <font>
+            <Font name="Lato Black Italic" size="14.0" />
+        </font>
+    </Text>
+    <TextField fx:id="a1" layoutX="403.0" layoutY="165.0" prefHeight="26.0" prefWidth="378.0" />
+    <Text layoutX="229.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <TextField fx:id="a2" layoutX="403.0" layoutY="196.0" prefHeight="26.0" prefWidth="378.0" />
+    <TextField fx:id="caseRefNo" layoutX="403.0" layoutY="227.0" prefHeight="26.0" prefWidth="378.0" />
+    <TextField fx:id="a3" layoutX="403.0" layoutY="262.0" prefHeight="26.0" prefWidth="378.0" AnchorPane.rightAnchor="299.0" />
+    <TextField fx:id="a4" layoutX="403.0" layoutY="297.0" prefHeight="26.0" prefWidth="378.0">
+        <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+        </cursor>
+    </TextField>
+    <TextField fx:id="a6" layoutX="403.0" layoutY="396.0" prefHeight="26.0" prefWidth="378.0" AnchorPane.rightAnchor="299.0" />
+    <TextField fx:id="a5" layoutX="403.0" layoutY="363.0" prefHeight="26.0" prefWidth="378.0" />
+    <Text layoutX="532.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OFFICER IN CHARGE POLICE STATION." underline="true" AnchorPane.leftAnchor="532.0">
+        <font>
+            <Font name="Lato Black Italic" size="13.0" />
+        </font>
+    </Text>
+    <TextField fx:id="a8" layoutX="444.0" layoutY="464.0" prefHeight="26.0" prefWidth="331.0" promptText="Kshs." />
+    <Text layoutX="497.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This Abstract Form is free of charge">
+        <font>
+            <Font name="Lato Black Italic" size="14.0" />
+        </font>
+    </Text>
+    <Text layoutX="228.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ABSTARCT REGISTER NO:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="225.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POLICE REFERENCE:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="225.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MISC. RECEIPT NO:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="222.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORT CONFIRMED:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="225.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORTED ON :">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="222.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POLICE STATION NAME:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="220.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CASE FILE NO:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="220.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPLAINANT'S NAME :">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="214.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VALUE OF PROPERTY INVOLVED :">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="220.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DETAILS OF PROPERTY RECOVERED:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <Text layoutX="220.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGNATURE:">
+        <font>
+            <Font name="FreeSans Bold" size="13.0" />
+        </font>
+    </Text>
+    <TextField fx:id="a7" layoutX="403.0" layoutY="431.0" prefHeight="26.0" prefWidth="378.0" />
+    <TextArea fx:id="a9" layoutX="475.0" layoutY="500.0" prefHeight="68.0" prefWidth="296.0" />
+    <Line endX="66.0" layoutX="414.0" layoutY="603.0" startX="-100.0" />
+   <TextField fx:id="dateReported" layoutX="403.0" layoutY="331.0" prefHeight="26.0" prefWidth="378.0" />
 </AnchorPane>

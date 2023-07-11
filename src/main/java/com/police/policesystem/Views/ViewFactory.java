@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class ViewFactory {
     private AccountType loginAccountType;
@@ -19,7 +20,7 @@ public class ViewFactory {
     private AnchorPane caseReportBView;
     private AnchorPane accidentReportView;
     private AnchorPane p3ReportView;
-    private AnchorPane casesView;
+
 
 
     /* Admin */
@@ -27,6 +28,8 @@ public class ViewFactory {
     private AnchorPane createUserView;
     private AnchorPane viewUsersView;
     private AnchorPane editView;
+    private AnchorPane adminDashboardView;
+    private AnchorPane casesView;
     public ViewFactory(){
         this.loginAccountType = AccountType.USER;
         this.userSelectedMenuItem = new SimpleObjectProperty<>();
@@ -101,17 +104,6 @@ public class ViewFactory {
         return p3ReportView;
     }
 
-    public AnchorPane getCasesView() {
-        if (casesView == null) {
-            try {
-                casesView= new FXMLLoader(getClass().getResource("/Fxml/Cases.fxml")).load();
-            }catch (Exception e){
-                e.printStackTrace();
-            }
-        }
-        return casesView;
-    }
-
     public void showLoginWindow(){
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Login.fxml"));
         createStage(loader);
@@ -160,6 +152,25 @@ public class ViewFactory {
         return viewUsersView;
     }
 
+    public AnchorPane getAdminDashboardView() {
+        try {
+            adminDashboardView = new FXMLLoader(getClass().getResource("/Fxml/Admin/AdminDashboard.fxml")).load();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return adminDashboardView;
+    }
+    public AnchorPane getCasesView() {
+        if (casesView == null) {
+            try {
+                casesView= new FXMLLoader(getClass().getResource("/Fxml/Admin/Cases.fxml")).load();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+        return casesView;
+    }
+
     public AnchorPane getEditView() {
         if (editView == null) {
             try {
@@ -182,9 +193,10 @@ public class ViewFactory {
         }
         Stage stage = new Stage();
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UNDECORATED);
         stage.getIcons().add(new Image(String.valueOf(getClass().getResource("/Images/logo.png"))));
         stage.setResizable(false);
-        stage.setTitle("Samis");
+        stage.setTitle("Police Records System");
         stage.show();
     }
     public void closeStage(Stage stage){

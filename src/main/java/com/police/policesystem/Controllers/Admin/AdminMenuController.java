@@ -20,6 +20,10 @@ public class AdminMenuController implements Initializable {
     public Button view_user_btn;
     @FXML
     public Button logoutButton;
+    @FXML
+    public Button adminDashboard;
+    @FXML
+    public Button casesButton;
 
     @FXML
     public void setLogoutButton(ActionEvent event) {
@@ -40,6 +44,8 @@ public class AdminMenuController implements Initializable {
     public void addListeners(){
         create_user_btn.setOnAction(event -> onCreateUser());
         view_user_btn.setOnAction(event -> onViewUser());
+        adminDashboard.setOnAction(event -> onDashboard());
+        casesButton.setOnAction(event -> onCases());
     }
 
     public void onCreateUser(){
@@ -47,5 +53,13 @@ public class AdminMenuController implements Initializable {
     }
     public void onViewUser(){
         Model.getInstance().getViewsFactory().getAdminSelectedMenuItem().set(AdminMenuOption.VIEW_USERS);
+    }
+
+    public void onDashboard(){
+        Model.getInstance().getViewsFactory().getAdminSelectedMenuItem().set(AdminMenuOption.DASHBOARD);
+    }
+
+    public void onCases(){
+        Model.getInstance().getViewsFactory().getAdminSelectedMenuItem().set(AdminMenuOption.VIEW_CASES);
     }
 }

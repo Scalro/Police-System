@@ -41,18 +41,8 @@ public class ViewUsersController implements Initializable {
 
     @FXML
     public TextField search_txtfld;
-
-    @FXML
-    public Button refreshButton;
     @FXML
     public Button editButton;
-
-    @FXML
-    public void refreshButtonClicked() {
-        listU.clear();
-        listU.addAll(DatabaseConnection.getUser());
-        viewUserTbl.refresh();
-    }
 
 
 

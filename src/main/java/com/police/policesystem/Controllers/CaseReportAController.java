@@ -7,9 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.SnapshotParameters;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.image.WritableImage;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -28,6 +26,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.embed.swing.SwingFXUtils;
 
@@ -35,73 +34,62 @@ public class CaseReportAController implements Initializable {
 
     @FXML
     public TextField a1;
-
     @FXML
-    public TextField a10;
-
-    @FXML
-    public TextField a11;
-
+    public TextArea a9;
     @FXML
     public TextField a2;
-
     @FXML
     public TextField a3;
-
     @FXML
     public TextField a4;
-
+    @FXML
+    public TextField dateReported;
     @FXML
     public TextField a5;
-
     @FXML
     public TextField a6;
-
     @FXML
     public TextField a7;
-
     @FXML
     public TextField a8;
-
     @FXML
-    public TextField a9;
-
+    public TextField caseRefNo;
     @FXML
     public Button saveAButton;
-
     @FXML
     public Button printAButton;
-
     Connection connection = null;
     PreparedStatement pst = null;
 
     public void Add() {
         connection = DatabaseConnection.ConnectDb();
-        String sql = "INSERT INTO caseA(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11) VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "INSERT INTO cases(a1, a2, caseRefNo, a3, a4, dateReported, a5, a6, a7, a8,a9) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
             pst = connection.prepareStatement(sql);
             pst.setString(1, a1.getText());
             pst.setString(2, a2.getText());
-            pst.setString(3, a3.getText());
-            pst.setString(4, a4.getText());
-            pst.setString(5, a5.getText());
-            pst.setString(6, a6.getText());
-            pst.setString(7, a7.getText());
-            pst.setString(8, a8.getText());
-            pst.setString(9, a9.getText());
-            pst.setString(10, a10.getText());
-            pst.setString(11, a11.getText());
+            pst.setString(3, caseRefNo.getText());
+            pst.setString(4, a3.getText());
+            pst.setString(5, a4.toString());
+            pst.setString(6, dateReported.getText());
+            pst.setString(7, a5.getText());
+            pst.setString(8, a6.getText());
+            pst.setString(9, a7.getText());
+            pst.setString(10, a8.getText());
+            pst.setString(11, a9.getText());
             pst.execute();
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Add");
             alert.setHeaderText(null);
-            alert.setContentText("Student Added Successfully!");
+            alert.setContentText("Police Abstract Added Successfully!");
             alert.showAndWait();
         } catch (Exception e) {
             throw new RuntimeException("Cannot Add", e);
         }
     }
+
+
 
 
     public void generatePDFReport() throws SQLException, IOException {
@@ -113,13 +101,13 @@ public class CaseReportAController implements Initializable {
 
         // Set the values from the database on the filled form
         connection = DatabaseConnection.ConnectDb();
-        String sql = "SELECT * FROM caseA";
+        String sql = "SELECT * FROM cases";
         ResultSet rs = connection.createStatement().executeQuery(sql);
 
         while (rs.next()) {
-            filledFormController.setFieldValues(rs.getString("a1"), rs.getString("a2"), rs.getString("a3"),
-                    rs.getString("a4"), rs.getString("a5"), rs.getString("a6"), rs.getString("a7"),
-                    rs.getString("a8"), rs.getString("a9"), rs.getString("a10"), rs.getString("a11"));
+            filledFormController.setFieldValues(rs.getString("a1"), rs.getString("a2"), rs.getString("caseRefNo"),
+                    rs.getString("a3"), rs.getString("a4"), rs.getString("dateReported"), rs.getString("a5"), rs.getString("a6"),
+                    rs.getString("a7"), rs.getString("a8"), rs.getString("a9"));
         }
 
         // Display the filled form view
@@ -188,11 +176,6 @@ public class CaseReportAController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         saveAButton.setOnAction(event -> {
             Add();
-            try {
-                generatePDFReport();
-            } catch (SQLException | IOException e) {
-                e.printStackTrace();
-            }
         });
 
         printAButton.setOnAction(event -> {

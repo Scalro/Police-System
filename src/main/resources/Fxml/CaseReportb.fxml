@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="750.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.CaseReportBController">
+<AnchorPane prefHeight="750.0" prefWidth="1080.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.police.policesystem.Controllers.FilledFormBController">
    <Text layoutX="466.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THE KENYA POLICE" AnchorPane.leftAnchor="466.0">
       <font>
          <Font name="Lato Black Italic" size="17.0" />
@@ -101,7 +101,7 @@
       </font>
    </Button>
    <TextField fx:id="b5" layoutX="394.0" layoutY="316.0" prefHeight="26.0" prefWidth="402.0" />
-   <TextField fx:id="b9" layoutX="395.0" layoutY="451.0" prefHeight="111.0" prefWidth="402.0" />
+   <TextArea fx:id="b9" layoutX="395.0" layoutY="451.0" prefHeight="111.0" prefWidth="402.0" />
    <Line endX="100.0" layoutX="394.0" layoutY="614.0" startX="-100.0" />
    <Button fx:id="printButton" layoutX="930.0" layoutY="66.0" mnemonicParsing="false" style="-fx-background-color: blue;" text="Print" textFill="WHITE">
       <font>
